@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .garary {
   display: flex;
   height: 90vh;
@@ -8,6 +11,10 @@
   margin-right: 4px;
   width: 50%;
   background-color: aliceblue;
+}
+#attention {
+  color: red;
+  text-align: center;
 }
 .portfolio2 {
   text-align: center;
@@ -37,11 +44,20 @@ p {
   margin-top: 30px;
   margin-left: 10px;
 }
+.meru-img , .expense-img{
+  display: none;
+}
 img {
-  /* height: 50%;
-  width: 50%; */
   margin-top: 20px;
   margin-left: 170px;
+}
+@media(max-width: 1000px) {
+  img {
+    margin-left: 120px;
+  }
+}
+.expense {
+  border: 1px solid black;
 }
 .explain {
   text-align: left;
