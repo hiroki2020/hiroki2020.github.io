@@ -4,19 +4,20 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 <body>
   <div class="garary">
-    
     <div class="portfolio1">
       <div class="title">
         <h1>Portfolio①</h1>
       </div>
-      <a href="http://18.177.162.64/" target="_blank" id="title">チーム開発</a>
+      <a href="http://18.177.162.64/" target="_blank" id="title" class="meru-title">メルカリコピーサイト</a>
       <div class="explain">
-        <a href="http://18.177.162.64/" target="_blank" id="img">
-          <img src="メル.png">
+        <a href="http://18.177.162.64/" target="_blank" id="img" class="meru-img">
+          <img src="メル.png" height="50%" width="50%">
         </a>
+        <p id="attention">※PCのみで使用可能となっております。</p>
         <p>開発人数： 3人</p>
         <p>開発期間： 約3週間</p>
         <p>担当箇所： 商品出品・詳細表示・編集・削除</p>
@@ -30,10 +31,10 @@
       <div class="title">
         <h1>Portfolio②</h1>
       </div>
-      <a href="https://expense-hiroki.herokuapp.com/" target="_blank" id="title">個人アプリ</a>
+      <a href="https://expense-hiroki.herokuapp.com/" target="_blank" id="title" class="expense-title">支出管理アプリ</a>
       <div class="explain">
-        <a href="https://expense-hiroki.herokuapp.com/" target="_blank" id="img">
-          <img src="Expense.png">
+        <a href="https://expense-hiroki.herokuapp.com/" target="_blank" id="img" class="expense-img">
+          <img src="Expense.png" height="50%" width="50%" class="expense">
         </a>
         <p>開発人数： 1人</p>
         <p>開発期間： 約1週間</p>
@@ -42,5 +43,17 @@
     </div>
 
   </div>
+
+  <div class="footer">
+    <div class="footer-left">
+      <li>柴田浩貴</li>
+      <li>Twitter: @khiro14726723</li>
+    </div>
+    <div class="footer-right">
+      <li>Email: khiro2138@gmail.com</li>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
