@@ -13,7 +13,7 @@ $(function() {
     $(this).css('background-color','deepskyblue');
   });
   $('.chat-title').hover(function(){
-    $(this).css('background-color','lightcyan');
+    $(this).css('background-color','darkturquoise');
   });
 
 });
