@@ -2,14 +2,18 @@ $(function() {
   $('.meru-title').hover(function(){
     $('.meru-hide').css('display','block')
   });
+  $('.chat-title').hover(function(){
+    $('.chat-hide').css('display','block')
+  });
   $('.expense-title').hover(function(){
     $('.expense-hide').css('display','block')
-    $(this).css('background-color','fuchsia');
+    $(this).css('background-color','violet');
   });
-
   $('#title').hover(function(){
     $(this).css('background-color','deepskyblue');
   });
-
+  $('.chat-title').hover(function(){
+    $(this).css('background-color','lightcyan');
+  });
 
 });
