@@ -3,28 +3,36 @@
 }
 .garary {
   display: flex;
-  height: 90vh;
-  width: 150%;
+  height: 100vh;
+  width: 100%;
 }
-.meru-hide, .expense-hide, .chat-hide {
-  display: none;
+
+.number {
+  text-align: center;
+  margin-top: 20px;
 }
 .portfolio1 {
   text-align: center;
   margin-right: 4px;
   width: 50%;
   background-color: aliceblue;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 span {
   color: red;
   font-size: 13px;
 }
-.portfolio2 {
+.introduce {
   text-align: center;
   margin-right: 3px;
   width: 50%;
   background-color: lavender;
+  height: 100%;
+  position: fixed;
 }
+
 #text-expense, #text-chat {
   margin-top: 30px;
 }
@@ -65,21 +73,34 @@ p {
   line-height: 1.5em; 
   font-size: 14px;
 }
-img {
-  margin-top: 30px;
-  margin-left: 170px;
-  margin-bottom: 10px;
-}
-@media(max-width: 1000px) {
-  img {
-    margin-left: 120px;
-  }
-}
+
 .meru, .expense, .chat {
   border: 1px solid black;
 }
-.explain {
+.introduce_myself {
   text-align: left;
+  padding: 20px;
+  line-height: 200%;
+}
+.myself {
+  width: 100%;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.introduce_text {
+  width: 100%;
+  margin-right: 18px;
+}
+a {
+  text-decoration: none;
+}
+#twitter {
+  color: blue;
+  font-weight: bold;
+}
+#hatena {
+  color: green;
+  font-weight: bold;
 }
 .footer {
   background-color: mediumaquamarine;
