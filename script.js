@@ -9,8 +9,8 @@ $(function() {
     $('.expense-hide').css('display','block')
     $(this).css('background-color','violet');
   });
-  $('#title').hover(function(){
-    $(this).css('background-color','deepskyblue');
+  $('').hover(function(){
+    $().css('background-color','deepskyblue');
   });
   $('.chat-title').hover(function(){
     $(this).css('background-color','darkturquoise');
