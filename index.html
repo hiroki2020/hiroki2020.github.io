@@ -7,36 +7,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 <body>
-  <div class="garary">
-    <div class="introduce">
-      <div class="title">
-        <a href="https://expense-hiroki.herokuapp.com/" target="_blank" id="title" class="expense-title">ABOUT</a>
-      </div>
+  <a id="about"></a>
+  <header>
+    <div class="header-menus">
+      <ul>
+        <li id="about-query"><a href="#about">ABOUT</a></li>
+        <li id="works-query"><a href="#works">WORKS</a></li>
+        <li id="servise-query"><a href="#servise">SERVICE</a></li>
+        <li id="contact-query"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <main>
+    <div class="about">
       <div class="introduce_myself">
         <div class="myself">
           柴田浩貴(Shibata Hiroki)<br>
         </div>
         <div class="introduce_text">
           <br>
-          2019年10月から年末まで、TECH::EXPERTで70日間1日10時間以上プログラミングに費やしました。<br><br>
+          2019年10月から年末まで、<a href="https://tech-camp.in/expert/learning" target="_blank" id="techexpert">TECH::EXPERT</a>で70日間、1日あたり約10時間プログラミングを学習しました。<br><br>
           アウトプット重視のカリキュラムで、HTML / CSS / Ruby / Ruby on Rails / jQuery / Haml / sass / AWS / Githubなどを学びました。<br><br>
-
-          TECH::EXPERTで学習を始める前からフリーランスに興味があり、最近フリーランスとして活動を始めました。<br><br>
-          <a href="https://twitter.com/khiro14726723" target="_blank" id="twitter">Twitter</a>では、日々の学習・活動報告をしています。<br>
-          
+          TECH::EXPERTで学習を始める前からフリーランスという働き方に興味があり、卒業後はフリーランスとしての活動を始めました。<br><br>
+          <a href="https://twitter.com/khiro14726723" target="_blank" id="twitter">Twitter</a>では、日々の学習・活動報告をしています。<br><br>
           <a href="https://khirok.hatenadiary.jp/" target="_blank" id="hatena">はてなブログ</a>では、学習したことをアウトプットしています。<br><br>
-        
+          実務未経験ですが、日々プログラミングをして個人としてのスキルを伸ばし続けています。<br><br>
+                 
         </div>
-
       </div>
     </div>
-
-    <div class="portfolio1">
-      <div class="title">
-        <a href="" id="title" class="meru-title">WORKS</a>
+    <a id="works"></a>
+    <div class="works">
+      <div class="title">    
       </div>
-      <div class="explain meru-hide">
-        <h1 class="number"></h1>
+      <div class="meru-works">
         <a href="http://18.177.162.64/" target="_blank" id="img" class="meru-img">
           <img src="メル.png" height="50%" width="50%" class="meru">
         </a>
@@ -45,26 +50,24 @@
             <span>※PCのみで使用可能です。</span><br><br>
             商品の出品・購入ができるアプリケーションです。<br><br>
             TECH::EXPERTの最終課題で3人のチームを組み、約3週間で開発しました。<br><br>
-            リンクをクリックしていただくと、IDとPWの入力を求められるので「64teama」と入力してください(2回目以降は不要です)。<br><br>
+            リンクをクリックしていただくと、IDとPWの入力を求められるので両方とも「64teama」と入力してください(2回目以降は不要です)。<br><br>
             テスト用アカウントでログインする際には、「test@icloud.com」と「aaaaaaa」を使用してください。
           </div>
       </div>
-      <div class="explain meru-hide">
-        <h1 class="number"></h1>
+      <div class="expense-works">
         <a href="https://expense-hiroki.herokuapp.com/" target="_blank" id="img" class="meru-img">
           <img src="Expense.png" height="50%" width="50%" class="meru">
         </a>
         </p>
-        <div class="text-contents">
+        <div class="text-contents" id="expense-text">
           日々の支出を管理できる簡単なアプリケーションです。<br><br>
           起動まで少々時間がかかりますので、ご了承ください。<br><br>
           新規登録してご使用ください。
         </div>
       </div>
-      <div class="explain meru-hide">
-        <h1 class="number"></h1>
+      <div class="chat-works" id="new-chat-space">
         <a href="https://new-chat-space.herokuapp.com/" target="_blank" id="img" class="meru-img">
-          <img src="chat.png" height="50%" width="50%" class="meru">
+          <img src="chat.png" height="50%" width="50%" class="chat">
         </a>
         </p>
         <div class="text-contents">
@@ -72,10 +75,34 @@
           起動まで少々時間がかかりますので、ご了承ください。<br><br>
         </div>
       </div>
-
     </div>
-    
-  </div>
+
+    <a id="servise"></a>
+    <div class="servise">
+      編集中
+    </div>
+
+    <a id="contact"></a>
+    <div class="contact">
+      <div class="form">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIoFlejlwzZVT1do4nP5_Z0c51QfCFAiF7XYDeLirVtfevAA/formResponse" method="post">
+          <div class="contact-form">
+            <div class="lavel">お名前</div>
+            <input type="text" name="entry.2005620554">
+          </div>
+          <div class="contact-form">
+            <div class="lavel">メールアドレス</div>
+            <input type="email" name="entry.1045781291">
+          </div>
+          <div class="contact-form">
+            <div class="lavel">お問い合わせ内容</div>
+            <textarea name="entry.839337160" rows="5" cols="30"></textarea> 
+          </div>
+          <button type="submit" name="submit" class="btn btn-info">送信する</button>
+        </form>
+      </div>
+    </div>
+  </main>
   
   <script src="script.js"></script>
 </body>
