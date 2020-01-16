@@ -33,7 +33,7 @@ main {
 }
 .introduce {
   text-align: left;
-  padding: 15px 50px;
+  padding: 5px 50px;
   line-height: 200%;
   width: 150%;
 }
@@ -89,10 +89,16 @@ a {
 }
 .skill {
   padding: 15px 50px;
+  background-color: lightgray;
+  height: 500px;
+  width: 800px;
+  margin-right: 100px;
+  border-radius: 20px;
+  margin-top: 40px;
 }
 .haml-sass-image {
   height: 20%;
-  width: 30%;
+  width: 40%;
   border-radius: 30px;
   margin-right: 20px;
 }
