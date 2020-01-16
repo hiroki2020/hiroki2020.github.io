@@ -19,5 +19,8 @@ $(function() {
     $('#contact-query a').css('color','dimgray');
     $('#about-query a, #works-query a, #servise-query a').css('color','black');
   });
-  
+
+  $('.meru-environment').hover(function(){
+    $('.meru-environment').css('background-color','green')
+  })
 });
