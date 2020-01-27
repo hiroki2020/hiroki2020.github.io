@@ -4,6 +4,7 @@
 header {
   height: 60px;
   position: fixed;
+  z-index: 10;
 }
 .header-menus {
   height: 100%;
@@ -107,9 +108,6 @@ a {
   background-color: aliceblue;
   padding: 120px 0;
 }
-.meru-works img{
-  margin-right: 310px;
-}
 .hide-box {
   height: 395px;
   width: 720px;
@@ -118,10 +116,21 @@ a {
   width: 720px;
   color: white;
 }
+.slider {
+  height: 50%;
+  width: 50%;
+  margin-left: 500px;
+  z-index: 0;
+}
+
+.meru {
+  border: 1px solid black;
+  height: 250px;
+  width: 50%;
+}
 .meru-environment {
   text-align: start;
-  margin-left: 200px;
-  margin-bottom: 20px;
+  margin: 50px 0 20px 330px;
   font-size: 14px;
   border: 1px solid darkcyan;
   width: 730px;
@@ -195,7 +204,7 @@ span {
 #new-chat-space .text-contents{
   margin-left: 35px;
 }
-.meru, .expense, .chat, .your-account {
+.expense, .chat, .your-account {
   border: 1px solid black;
 }
 .your-account-environment {

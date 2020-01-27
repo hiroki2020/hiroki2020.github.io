@@ -4,7 +4,7 @@ $(function() {
     $('#works-query a, #servise-query a, #contact-query a').css('color','black');
   });
   
-
+  
   $('#works-query').click(function(){
     $('#works-query a').css('color','dimgray');
     $('#about-query a, #servise-query a, #contact-query a').css('color','black');
@@ -19,5 +19,9 @@ $(function() {
     $('#contact-query a').css('color','dimgray');
     $('#about-query a, #works-query a, #servise-query a').css('color','black');
   });
+
+
+
+  
 
 });

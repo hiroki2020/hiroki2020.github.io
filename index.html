@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="slick.css" rel="stylesheet" type="text/css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> -->
+    <script type="text/javascript" src="slick.min.js"></script>
   </head>
 <body>
   <a id="about"></a>
@@ -17,9 +21,9 @@
         <li id="contact-query"><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
-  </header>
+  </header> -->
   
-  <main>
+  <!-- <main>
     <div class="about">
       <div class="introduce">
         <h1>自己紹介</h1>
@@ -41,7 +45,7 @@
       <div class="skill">
         <div class="contents">
           <p>HTML / CSS</p>
-          <img src="html css.jpg" class="contents-image">
+          <img src="html css.jpg" class="contents-image">  
           <div class="contents-text">
             Webサイトの見た目を作ることができます。
           </div>
@@ -79,9 +83,13 @@
       <div class="title">    
       </div>
       <div class="meru-works">
-        <a href="http://18.177.162.64/" target="_blank" id="img" class="meru-img">
-          <img src="メル.png" height="50%" width="50%" class="meru">
-        </a>
+          <!-- ----slick導入----- -->
+          <div class="slider"> 
+            <div><a href="http://18.177.162.64/"><img src="メル.png" class="meru"></a></div>
+            <div><a href="http://18.177.162.64/"><img src="item.png" class="meru"></a></div>
+            <div><a href="http://18.177.162.64/"><img src="show.png" class="meru"></a></div>
+          </div>
+          <!-- ----------------- -->
         </p>
         <div class="meru-environment">
           言語:<br>
@@ -184,5 +192,8 @@
   </main>
   
   <script src="script.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick.min.js"></script>
 </body>
 </html>
