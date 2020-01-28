@@ -2,6 +2,8 @@
 <head>
   <title>Shibata Hiroki</title>
   <link href="index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="slick/slick.css" rel="stylesheet">
   <link href="slick/slick-theme.css" rel="stylesheet">
   <link href="reset.css" rel="stylesheet">
@@ -12,48 +14,28 @@
   <script src="bold.js"></script>
   <script src="scroll-arrow.js"></script>
   <script src="https://kit.fontawesome.com/2bd93a793c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
 </head>
 <body>
   
   <header>
-    <!-- <div class="header-left">
-      <div class="slill">
-        <p class="skill__title">スキル<span class="add">+</span></p>
-        <div class="skill-content">
-          <div class="front-end">
-            <p class="front-end__title">フロントエンド<span class="add2">+</span></p>
-            <div class="front-end__contents">
-              <div class="front-end__content"><li><a href="#haml-sass">HTML & CSS</a></li></div> 
-              <div class="front-end__content"><li><a href="#haml-sass">Haml & Sass</a></li></div>
-              <div class="front-end__content"><li><a href="#jquery">jQuery</a></li></div>
-            </div>
-            <p class="front-end__title2">バックエンド<span class="add3">+</span></p>
-            <div class="front-end__contents2">
-              <div class="front-end__content"><li><a href="#rails">Ruby on Rails</a></li></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="about">
-        <p class="about__title">自己紹介<span class="about__add">+</span></p>
-        <div class="about-contents">
-          <div class="about-content"><li>Twitter</li></div>
-        </div>
-      </div>
-    </div> -->
-    <ul>
-      <li>自己紹介</li>
-      <li>HTML & CSS</li>
-      <li>Haml & Sass</li>
-      <li>jQuery</li>
-      <li>Ruby on Rails</li>
+    <ul class="table-of-contents">
+      <h1 id="about">ABOUT</h1>
+      <h1 id="skill">SKILL</h1>
+      <ul>
+        <li id="skill-1">・HTML & CSS</li>
+        <li id="skill-2">・Haml & Sass</li>
+        <li id="skill-3">・jQuery</li>
+        <li id="skill-4">・Ruby on Rails</li>
+      </ul>
+      <h1 id="works">WORKS</h1>
+      <li id="work-1">・Freemarket App</li>
+      <li id="work-2">・Expense App</li>
+      <h1 id="contact">CONTACT</h1>
     </ul>
     
   </header>
 
-  <div class="scroll-arrow">
-    <i class="fa fa-arrow-up" aria-hidden="true"></i>
-  </div>
   <div class="top">
     <h1>自己紹介</h1> 
       <div class="top-textbox">
@@ -72,7 +54,8 @@
       </div>
   </div>
 
-  <div class="work1">
+  <div class="skill-1">
+    <h2>スキル</h2>
     <a id="haml-sass"></a>
     <div class="title">
       <h1>HTML & CSS</h1>
@@ -88,7 +71,7 @@
     </div>
   </div>
 
-  <div class="work1">
+  <div class="skill-2">
     <a id="haml-sass"></a>
     <div class="title">
       <h1>Haml & Sass</h1>
@@ -98,24 +81,15 @@
       <div><img src="img/出品ページ2.png"></div>
       <div><img src="img/出品ページ3.png"></div>
       <div><img src="img/出品ページ4.png"></div>
-      <div>
-        <h1>Haml</h1>
-        <!-- <pre class="work1-pre1">
-          <code class="work1-code1"> -->
-            <script src="https://gist-it.appspot.com/【 app/views/items/new.html.haml】"></script>
-          <!-- </code>
-        </pre> -->
-      </div>
     </div>
     <div class="textbox">
       <p>htmlとcssを使用したコーディング以外にも、Ruby on Railsの環境内のみですが、</p>
-      <p>htmlとcssをより簡単に記述できるHamlとSassを使用して、</p>
-      <p>このような見た目を作ることができます。</p>
+      <p>htmlとcssをより簡単に記述できるHamlとSassを使用して、このような見た目を作ることができます。</p>
       <p>これは、TEXH::EXPERTで3人体制のアジャイル開発で自分が担当した箇所です。</p>
     </div>
   </div>
 
-  <div class="work2">
+  <div class="skill-3">
     <a id="jquery"></a>
     <div class="title">
       <h1>jQuery</h1>
@@ -123,65 +97,18 @@
     <div class="single2">
       <div><img src="img/number-before.png"></div>
       <div><img src="img/number-after.png"></div>
-      <div>
-        <h1>app > assets > javascripts > new.js</h1>
-        <pre class="work2-pre2">
-          <code class="work2-code2">
-            $(function() {
-              document.addEventListener('turbolinks:load', function(){
-                  $('.input-price').keyup(function() {
-                  var price = $('.input-price').val();
-                  var price_fee = (price * 0.1);
-                  var price_profit = (price - price_fee);
-                  $('#fee').text(price_fee);
-                  $('#amount').text(price_profit);
-                });
-              });
-            });
-          </code>
-        </pre>
-      </div>
-      <div>
-        <h1>app > views > items > new.html.haml</h1>
-        <pre class="work2-pre1">
-          <code class="work2-code1">
-            .exhibit-wrapper__sell-content.clearfix
-              %h3 販売価格(300~9,999,999)
-              .exhibit-wrapper__sell-content__pulldown
-                .exhibit-wrapper__sell-content__pulldown__name
-                  %p.name 
-                    価格   
-                    %span.form-require 必須 
-                  %p.price
-                    ¥ 
-                    = f.number_field :price, placeholder: "例) 300", class: "input-price"
-                .exhibit-wrapper__sell-content__pulldown__name
-                  .fee__title
-                    販売手数料(10%)
-                  .fee__amount 
-                    ¥ 
-                    %span#fee -
-                .exhibit-wrapper__sell-content__pulldown__name-profit
-                  .profit__title
-                    販売利益    
-                  .profit__amount
-                    ¥ 
-                    %span#amount -
-          </code>
-        </pre>
-      </div>
     </div>
     <div class="textbox">
       <p>"フォームに価格を入力すると、販売手数料と販売利益が自動計算されて表示される"</p>
-      <p>という仕組みをjQueryで実装しました。</p>
+      <p>という仕組みをjQueryを用いて実装することができます。</p>
       <p></p>
       <p></p>
     </div>
   </div>
 
-  <div class="work3">
+  <div class="skill-4">
     <div><a id="rails"></a></div>
-    <div class="work3__title">
+    <div class="title">
       <h1>Ruby on Rails</h1>
     </div>
     <div class="single3">
@@ -191,16 +118,78 @@
       <div><img src="img/exhibit-4.png"></div>
       <div><img src="img/exhibit-5.png"></div>
     </div>
-    <div class="textbox">
-      <p>htmlとcssを使用したコーディング以外にも、Ruby on Railsの環境内のみですが、</p>
-      <p>htmlとcssをより簡単に記述できるHamlとSassを使用して、</p>
-      <p>このような見た目を作ることができます。</p>
-      <p>これは、TEXH::EXPERTで3人体制のアジャイル開発で自分が担当した箇所です。</p>
+    <div class="skill-4__textbox">
+      <p>Ruby on Railsを使用して、「"商品出品" → "一覧ページに表示"」の流れを実装することができます。</p>
+      <p>スライドでは、1,400円のコップを出品しています。</p>
+      <p>4枚目のモーダルはjQueryを使用しました。</p>
     </div>
   </div>
 
-  <div class="about">
-    
+  <div class="works">
+    <h1>作品(Ruby on Rails)</h1>
+    <div class="work-1">
+      <h2>フリマアプリ</h2>
+      URL・・・<a href="http://18.177.162.64/" target="_blank">http://18.177.162.64</a>
+    </div>
+    <div class="work-1__title">
+      <h3>操作手順</h3>
+    </div>
+    <div class="textbox">
+      <p><span>①</span>IDとPassWordを入力してください。</p>
+      <p>&nbsp;&nbsp;&nbsp;<span>ID・・・</span>64teama</p>
+      <p>&nbsp;&nbsp;&nbsp;<span>PassWord・・・</span>64teama</p>
+      <p><span>②</span>ログインしてください。</p> 
+      <p>&nbsp;&nbsp;&nbsp;●購入動作を確認したい場合</p> 
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>メールアドレス・・・</span>buyer@gmail.com</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>パスワード・・・</span>1234567</p>
+      <p>&nbsp;&nbsp;&nbsp;●出品動作を確認したい場合</p> 
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>メールアドレス・・・</span>seller@gmail.com</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>パスワード・・・</span>1234567</p>
+      <p><span>③</span>出品や購入をお試しください。</p>
+      <p><span>④</span>「マイページ → 設定」からログアウトしてください。</p>
+    </div>
+
+    <div class="work-2">
+      <h2>支出管理アプリ</h2>
+      URL・・・<a href="https://expense-hiroki.herokuapp.com/" target="_blank">https://expense-hiroki.herokuapp.com/</a>
+    </div>
+    <div class="work-2__procedure">
+      <div class="work-2__title">
+        <h3>操作手順</h3>
+      </div>
+      <div class="textbox" id="work-2__textbox">
+        <p><span>①</span>新規登録をしてください</p>
+        <p><span>②</span>「支出を記録する」をクリックしてください。</p> 
+        <p><span>③</span>「何に」、「いくら」使ったのかを入力してください。</p>
+        <p><span>④</span>その他にもアプリ内で色々とお試しください。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h1>お問い合わせ</h1>
+    <div class="form">
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIoFlejlwzZVT1do4nP5_Z0c51QfCFAiF7XYDeLirVtfevAA/formResponse" method="post">
+        <div class="contact-form">
+          <div class="lavel">お名前</div>
+          <input type="text" name="entry.2005620554">
+        </div>
+        <div class="contact-form">
+          <div class="lavel">メールアドレス</div>
+          <input type="email" name="entry.1045781291">
+        </div>
+        <div class="contact-form">
+          <div class="lavel">お問い合わせ内容</div>
+          <textarea name="entry.839337160" rows="5" cols="30"></textarea> 
+        </div>
+        <button type="submit" name="submit" class="btn btn-info">送信する</button>
+      </form>
+    </div>
+  </div>
+  
+  <div class="scroll-arrow">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
   </div>
 
 </body>
+
