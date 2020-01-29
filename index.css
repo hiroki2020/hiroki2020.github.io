@@ -7,7 +7,15 @@ a {
   color: black;
 }
 
-  .table-of-contents {
+  .menu-icon {
+    display: none;
+  }
+
+  .modal {
+    display: none;
+  }
+
+  .table-of-contents-pc {
     box-shadow: 0 0 1px 1px black;
     position: fixed;
     z-index: 1;
@@ -28,7 +36,7 @@ a {
     margin-bottom: 10px;
   }
 
-  .table-of-contents h1 {
+  .table-of-contents-pc h1 {
     border-bottom: 2px solid black;
     text-align: center;
     padding: 15px 0 5px 0;
@@ -39,18 +47,11 @@ header li {
   margin: 30px 0 10px 5px;
   font-size: 20px;
 }
-#headline {
-  font-size: 25px;
-}
+
 .skill {
   height: 790px;
 }
-.front-end__title {
-  margin-left: 10px;
-}
-.front-end__content {
-  margin: 30px 0 0 20px;
-}
+
 .skill__title, .skill .add, .about__title {
   font-size: 40px;
 }
@@ -347,5 +348,7 @@ header li {
     font-size: 20px;
     cursor: pointer;
   }
+
+  
 
   

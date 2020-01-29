@@ -1,0 +1,115 @@
+/* スマホのmax-widthは767px */
+/* @media(max-width: 767px) { 
+  何の{
+    何を : どうする;
+  } 
+} */
+
+@media(max-width: 767px) { 
+
+  .scroll-arrow{
+    font-size: 80px;
+    height: 180px;
+    width: 180px;
+    line-height: 180px;
+  } 
+
+  /* メニュー */
+    .menu-icon {
+      display: block;
+      font-size: 80px;
+      position: fixed;
+      margin: 10px;
+    }
+    
+    .modal {
+      display: none;
+    }
+
+      .table-of-contents {
+        box-shadow: 0 0 1px 5px black;
+        position: fixed;
+        z-index: 1;
+        width: 400px;
+        background-color: #fff;
+        border-radius: 10px;
+        height: 1350px;
+        top: 95px;
+        left: 150px;
+        padding: 0 60px 0 60px;  
+        z-index: 2;
+        overflow: scroll;
+      }
+
+      .table-of-contents-pc {
+        display: none;
+      }
+
+    .modal-active {
+      display: block;
+    }
+    
+      .table-of-contents h1 {
+        border-bottom: 5px solid black;
+        text-align: center;
+        padding: 15px 0 5px 0;
+        width: 73%;
+        margin: 60px 0 50px 40px;
+        font-size: 100px;
+      }
+      
+      header li {
+        margin: 100px 0 10px 15px;
+        font-size: 50px;  
+      }
+
+      #contact {
+        margin: 80px 0;
+        width: 85%;
+      }
+    /* ----------------------------------- */
+  
+  /* ABOUT */  
+  .top {
+    height: 1780px;
+    text-align: center;
+    margin-left: 80px;
+  }
+    .top h1 {
+      padding-top: 50px;
+      padding-bottom: 5px;
+      width: 70%;
+      font-size: 50px;
+      margin-bottom: 40px;
+      margin-left: 240px;
+      background: linear-gradient(transparent 90%, #E5E5E5 0%);
+    }
+    .top-textbox {
+      background-color: #E5E5E5;
+      height: 1150px;
+      width: 700px;
+      text-align: start;
+      margin: 0 100px 0 10px;
+      border-radius: 10px; 
+      display: block;
+    }
+    .top-textbox__contents {
+      padding: 20px;
+      font-size: 30px;
+    }
+    .top-textbox__contents p{
+      line-height: 50px;
+    }
+    .twitter {
+      width: 600px;
+      height: 470px;
+      overflow: scroll;
+      border: 1px solid black;
+    }
+  
+  .skill-1, .skill-2, .skill-3, .skill-4 {
+    text-align: center;
+  }
+  
+
+}

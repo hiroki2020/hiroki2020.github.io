@@ -2,6 +2,8 @@
 <head>
   <title>Shibata Hiroki</title>
   <link href="index.css" rel="stylesheet">
+  <link href="responsive_smartphone.css" rel="stylesheet">
+  <link href="modal.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="slick/slick.css" rel="stylesheet">
@@ -13,6 +15,7 @@
   <script src="accordion.js"></script>
   <script src="bold.js"></script>
   <script src="scroll-arrow.js"></script>
+  <script src="table-of-contents.js"></script>
   <script src="https://kit.fontawesome.com/2bd93a793c.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
   <meta name="viewport" content="width=device-width", initial-scale=1.0>
@@ -20,7 +23,28 @@
 <body>
   
   <header>
-    <ul class="table-of-contents">
+
+    <a href="#" class="menu-icon">
+      <span class="fa fa-bars"></span> 
+    </a>
+    
+    <div class="modal">
+      <ul class="table-of-contents">
+        <h1 id="about">ABOUT</h1>
+        <h1 id="skill">SKILL</h1>
+        <ul>
+          <li id="skill-1">・HTML & CSS</li>
+          <li id="skill-2">・Haml & Sass</li>
+          <li id="skill-3">・jQuery</li>
+          <li id="skill-4">・Ruby on Rails</li>
+        </ul>
+        <h1 id="works">WORKS</h1>
+        <li id="work-1">・Freemarket App</li>
+        <li id="work-2">・Expense App</li>
+        <h1 id="contact">CONTACT</h1>
+      </ul>
+    </div>
+    <ul class="table-of-contents-pc">
       <h1 id="about">ABOUT</h1>
       <h1 id="skill">SKILL</h1>
       <ul>
@@ -34,7 +58,7 @@
       <li id="work-2">・Expense App</li>
       <h1 id="contact">CONTACT</h1>
     </ul>
-    
+
   </header>
 
   <div class="top">
