@@ -5,7 +5,7 @@
   } 
 } */
 
-@media(max-width: 767px) { 
+@media screen and (max-width: 767px) { 
 
   .scroll-arrow{
     font-size: 40px;
