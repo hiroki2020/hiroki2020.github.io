@@ -14,7 +14,7 @@
   <script src="slick/slick.js"></script>
   <script src="accordion.js"></script>
   <script src="bold.js"></script>
-  <script src="scroll-arrow.js"></script>
+  <script src="scroll.js"></script>
   <script src="table-of-contents.js"></script>
   <script src="https://kit.fontawesome.com/2bd93a793c.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
@@ -23,27 +23,6 @@
 <body>
   
   <header>
-
-    <a href="#" class="menu-icon">
-      <span class="fa fa-bars"></span> 
-    </a>
-    
-    <div class="modal">
-      <ul class="table-of-contents">
-        <h1 id="about">ABOUT</h1>
-        <h1 id="skill">SKILL</h1>
-        <ul>
-          <li id="skill-1">・HTML & CSS</li>
-          <li id="skill-2">・Haml & Sass</li>
-          <li id="skill-3">・jQuery</li>
-          <li id="skill-4">・Ruby on Rails</li>
-        </ul>
-        <h1 id="works">WORKS</h1>
-        <li id="work-1">・Freemarket App</li>
-        <li id="work-2">・Expense App</li>
-        <h1 id="contact">CONTACT</h1>
-      </ul>
-    </div>
     <ul class="table-of-contents-pc">
       <h1 id="about">ABOUT</h1>
       <h1 id="skill">SKILL</h1>
@@ -58,14 +37,34 @@
       <li id="work-2">・Expense App</li>
       <h1 id="contact">CONTACT</h1>
     </ul>
+    
+    <a href="#" class="menu-icon">
+      <span class="fa fa-bars"></span> 
+    </a>
 
+    <div class="modal">
+      <ul class="table-of-contents">
+        <h1 id="modal-about">ABOUT</h1>
+        <h1 id="modal-skill">SKILL</h1>
+        <ul>
+          <li id="modal-skill-1">・HTML & CSS</li>
+          <li id="modal-skill-2">・Haml & Sass</li>
+          <li id="modal-skill-3">・jQuery</li>
+          <li id="modal-skill-4">・Ruby on Rails</li>
+        </ul>
+        <h1 id="modal-works">WORKS</h1>
+        <li id="modal-work-1">・Freemarket App</li>
+        <li id="modal-work-2">・Expense App</li>
+        <h1 id="modal-contact">CONTACT</h1>
+      </ul>
+    </div>
   </header>
 
   <div class="top">
     <h1>自己紹介</h1> 
       <div class="top-textbox">
         <div class="top-textbox__contents">
-          <p>新卒で就職したホテルを退職後、プログラミングに出会いました。自分が書いたコードによって、プロダクトが出来上がっていくことに楽しみを覚えていました。</p>
+          <p>新卒で就職したホテルを退職後、オンラインプログラミングサイトProgateを通してプログラミングに出会いました。自分が書いたコードによって画面が変化していくことが楽しく、学習を継続していました。</p>
           <p>JavaやPythonなどのプログラミング言語に少し触れた後、通信系のエンジニアに転職しましたが、"未経験だったためプログラミング言語を使用した業務にアサインされなかった"、"web系のエンジニアになりたかった"という2つの理由があり、退職を決意しました。</p>
           <p>その後、プログラミングスクールTECH::EXPERTのフリーランスコースを受講しました。</p>
           <p>現在(2020年1月23日時点)は、スクールを卒業しています。</p>
@@ -73,41 +72,39 @@
           <p>また最近は、仕事の幅を広げるため、WordPressを学習中です。</p>
           <p>Twitterでは、毎日行うこと・学習効率を高めるためにできること・思ったことを発信しています。</p>
         </div>
-        <div class="twitter">
+        <div class="twitter--pc">
           <a class="twitter-timeline" href="https://twitter.com/khiro14726723?ref_src=twsrc%5Etfw">Tweets by khiro14726723</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+        </div>   
       </div>
+      <div class="twitter--smart-phone">
+        <a class="twitter-timeline" href="https://twitter.com/khiro14726723?ref_src=twsrc%5Etfw">Tweets by khiro14726723</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>                   
   </div>
 
   <div class="skill-1">
     <h2>スキル</h2>
-    <a id="haml-sass"></a>
-    <div class="title">
+    <div class="skill-1__title">
       <h1>HTML & CSS</h1>
     </div>
     <div class="single">
       <div><img src="img/workship.png"></div>
     </div>
-    <div class="textbox">
-      <p>現在、HTMLとCSSを使用して<a href="https://goworkship.com/" target="_blank">フリーランスプラットフォームWorkship</a>の模写コーディングを行なっています。</p>
-      <p></p>
-      <p></p>
-      <p></p>
+    <div class="skill-1__textbox">
+      <p>現在、HTMLとCSSを使用して、このようなWebサイト(<a href="https://goworkship.com/" target="_blank">フリーランスプラットフォームWorkship</a>)の模写コーディングを行なっています。</p>
     </div>
   </div>
 
   <div class="skill-2">
-    <a id="haml-sass"></a>
     <div class="title">
       <h1>Haml & Sass</h1>
     </div>
-    <div class="single">
+    <div class="single-2">
       <div><img src="img/出品ページ1.png"></div>
       <div><img src="img/出品ページ2.png"></div>
       <div><img src="img/出品ページ3.png"></div>
       <div><img src="img/出品ページ4.png"></div>
     </div>
-    <div class="textbox">
+    <div class="single-2__textbox">
       <p>htmlとcssを使用したコーディング以外にも、Ruby on Railsの環境内のみですが、</p>
       <p>htmlとcssをより簡単に記述できるHamlとSassを使用して、このような見た目を作ることができます。</p>
       <p>これは、TEXH::EXPERTで3人体制のアジャイル開発で自分が担当した箇所です。</p>
@@ -115,15 +112,14 @@
   </div>
 
   <div class="skill-3">
-    <a id="jquery"></a>
     <div class="title">
       <h1>jQuery</h1>
     </div>
-    <div class="single2">
+    <div class="single-3">
       <div><img src="img/number-before.png"></div>
       <div><img src="img/number-after.png"></div>
     </div>
-    <div class="textbox">
+    <div class="skill-3__textbox">
       <p>"フォームに価格を入力すると、販売手数料と販売利益が自動計算されて表示される"</p>
       <p>という仕組みをjQueryを用いて実装することができます。</p>
       <p></p>
@@ -132,11 +128,10 @@
   </div>
 
   <div class="skill-4">
-    <div><a id="rails"></a></div>
     <div class="title">
       <h1>Ruby on Rails</h1>
     </div>
-    <div class="single3">
+    <div class="single-4">
       <div><img src="img/exhibit-1.png"></div>
       <div><img src="img/exhibit-2.png"></div>
       <div><img src="img/exhibit-3.png"></div>
@@ -154,29 +149,35 @@
     <h1>作品(Ruby on Rails)</h1>
     <div class="work-1">
       <h2>フリマアプリ</h2>
-      URL・・・<a href="http://18.177.162.64/" target="_blank">http://18.177.162.64</a>
+      <div class="work-1__url">
+        URL・・・<a href="http://18.177.162.64/" target="_blank">http://18.177.162.64</a>
+      </div>
     </div>
-    <div class="work-1__title">
-      <h3>操作手順</h3>
-    </div>
-    <div class="textbox">
-      <p><span>①</span>IDとPassWordを入力してください。</p>
-      <p>&nbsp;&nbsp;&nbsp;<span>ID・・・</span>64teama</p>
-      <p>&nbsp;&nbsp;&nbsp;<span>PassWord・・・</span>64teama</p>
-      <p><span>②</span>ログインしてください。</p> 
-      <p>&nbsp;&nbsp;&nbsp;●購入動作を確認したい場合</p> 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>メールアドレス・・・</span>buyer@gmail.com</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>パスワード・・・</span>1234567</p>
-      <p>&nbsp;&nbsp;&nbsp;●出品動作を確認したい場合</p> 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>メールアドレス・・・</span>seller@gmail.com</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>パスワード・・・</span>1234567</p>
-      <p><span>③</span>出品や購入をお試しください。</p>
-      <p><span>④</span>「マイページ → 設定」からログアウトしてください。</p>
+    <div class="work-1__procedure">
+      <div class="work-1__title">
+        <h3>操作手順</h3>
+      </div>
+      <div class="work-1__textbox">
+        <p><span>①</span>ユーザー名とパスワードを入力してください。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>ID・・・</span>64teama</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>PassWord・・・</span>64teama</p>
+        <p><span>②</span>ログインしてください。</p> 
+        <p>&nbsp;&nbsp;&nbsp;●購入動作を確認したい場合</p> 
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>メールアドレス・・・</span>buyer@gmail.com</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>パスワード・・・</span>1234567</p>
+        <p>&nbsp;&nbsp;&nbsp;●出品動作を確認したい場合</p> 
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>メールアドレス・・・</span>seller@gmail.com</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>パスワード・・・</span>1234567</p>
+        <p><span>③</span>出品や購入をお試しください。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;(動作確認用のアカウントなので、実際に費用が発生したり商品が届く<br><br>&nbsp;&nbsp;&nbsp;&nbsp;ことはありません。)</p>
+        <p><span>④</span>「マイページ → 設定」からログアウトしてください。</p>
+      </div>
     </div>
 
     <div class="work-2">
       <h2>支出管理アプリ</h2>
-      URL・・・<a href="https://expense-hiroki.herokuapp.com/" target="_blank">https://expense-hiroki.herokuapp.com/</a>
+      <div class="work-2__url">
+        URL・・・<a href="https://expense-hiroki.herokuapp.com/" target="_blank">https://expense-hiroki.herokuapp.com/</a>
+      </div>
     </div>
     <div class="work-2__procedure">
       <div class="work-2__title">

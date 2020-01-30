@@ -1,5 +1,6 @@
+/* 全体的なCSS */
 * {
-  background-origin: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -7,25 +8,34 @@ a {
   color: black;
 }
 
-  .menu-icon {
-    display: none;
-  }
+.menu-icon {
+  display: none;
+}
 
-  .modal {
-    display: none;
-  }
+.modal {
+  display: none;
+}
+/* -------------------------------------- */
 
-  .table-of-contents-pc {
-    box-shadow: 0 0 1px 1px black;
-    position: fixed;
-    z-index: 1;
-    width: 150px;
-    background-color: #fff;
-    border-radius: 10px;
-    top: 40px;
-    left: 20px;
-  }
+/* PCの時のメニュー */
+.table-of-contents-pc {
+  box-shadow: 0 0 1px 1px black;
+  position: fixed;
+  z-index: 1;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  top: 40px;
+  left: 20px;
+}
 
+  .table-of-contents-pc h1 {
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 15px 0 5px 0;
+    width: 43%;
+    margin-left: 40px;
+  }
   #about, #skill, #skill-1, #skill-2, #skill-3, #skill-4, #works, #work-1, #work-2, #contact{
     cursor: pointer;
     font-family: 'Caveat', cursive;
@@ -36,186 +46,227 @@ a {
     margin-bottom: 10px;
   }
 
-  .table-of-contents-pc h1 {
-    border-bottom: 2px solid black;
-    text-align: center;
-    padding: 15px 0 5px 0;
-    width: 43%;
-    margin-left: 40px;
+  header li {
+    margin: 30px 0 10px 5px;
+    font-size: 20px;
   }
-header li {
-  margin: 30px 0 10px 5px;
-  font-size: 20px;
-}
+/* --------------------------------------------------- */
 
-.skill {
-  height: 790px;
-}
-
-.skill__title, .skill .add, .about__title {
-  font-size: 40px;
-}
-.add, .add2, .add3, .about__add {
-  cursor: pointer;
-  margin-left: 30px;
-}
-.skill span {
-  margin-left: 50px;
-  font-size: 20px;
-  cursor: pointer;
-}
-.skill__content, .front-end, .front-end__contents, .front-end__contents2 {
-  display: none;
-  margin-top: 50px;
-}
-.front-end__title2 {
-  margin:  40px 0 0 13px;
-}
-.about {
-  margin-top: 40px;
-}
-
-
+/* ABOUT */
 .top {
   height: 780px;
   text-align: center;
   margin-left: 150px;
 }
-  .top h1 {
-    padding-top: 50px;
-    padding-bottom: 5px;
-    width: 18%;
-    font-size: 50px;
-    margin-bottom: 40px;
-    margin-left: 480px;
-    background: linear-gradient(transparent 90%, #E5E5E5 0%);
-  }
-  .top-textbox {
-    background-color: #E5E5E5;
-    height: 550px;
-    width: 1200px;
-    text-align: start;
-    display: flex;
-    margin: 0 auto;
-    border-radius: 10px; 
-  }
-  .top-textbox__contents {
-    padding: 20px;
-  }
-  .top-textbox__contents p{
-    line-height: 50px;
-  }
-  .twitter {
-    width: 530px;
-    height: 410px;
-    overflow: scroll;
-    border: 1px solid black;
-    margin: 50px;
-  }
-.skill-1, .skill-2, .skill-3, .skill-4 {
-  text-align: center;
-}
 
-.title {
-  padding-top: 40px;
-}
-.title h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-.title p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-.single { max-width: 800px; margin: 30px 0 50px 350px;}
-.single img, .single3 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
-.single h1 {
-  text-align: start;
-  margin-bottom: 10px;
-}
-
-.skill-1 h2 {
+.top h1 {
   padding-top: 50px;
-  padding-bottom: 20px;
-  width: 13%;
+  padding-bottom: 5px;
+  width: 18%;
   font-size: 50px;
-  margin-bottom: 30px;
-  margin-left: 650px;
+  margin-bottom: 40px;
+  margin-left: 480px;
   background: linear-gradient(transparent 90%, #E5E5E5 0%);
 }
 
-.title {
-  margin-left: 50px;
+.top-textbox {
+  background-color: #E5E5E5;
+  height: 550px;
+  width: 1200px;
+  text-align: start;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 10px;
 }
-  .title h1 {
-    font-size: 25px;
+
+  .top-textbox__contents {
+    padding: 20px;
   }
 
-.textbox {
-  height: 160px;
-  width: 800px;
-  margin: 80px auto;
-  text-align: start;
-  padding-left: 50px;
-  font-size: 15px;
-  letter-spacing: 0.1em;
-  line-height: 2em;
-}
-.textbox p , .textbox a{
-  margin: 20px 0;
-  color: gray;  
-}
-.skill-2, .skill-3 {
-  height: 850px;
-}
-.skill-2 .title, .skill-3 .title {
-  margin-top: 60px;
+  .top-textbox__contents p{
+    line-height: 50px;
+  }
+
+.twitter--pc {
+  width: 530px;
+  height: 410px;
+  overflow: scroll;
+  border: 1px solid black;
+  margin: 50px; 
 }
 
-.single2 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
-.single2 { max-width: 800px; margin: 50px 300px 0 350px;}
+.twitter--smart-phone {
+  display: none;
+}
 
+/* ドットの大きさ調整 */
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 100px;
+    line-height: 20px;
 
-.single3 { max-width: 800px; margin: 30px 0 50px 350px;}
+    position: absolute;
+    top: 0;
+    left: 0;
 
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* skill-1 */
+.skill-1 {
+  text-align: center;
+}
+  .skill-1 h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 13%;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-left: 650px;
+    background: linear-gradient(transparent 90%, #E5E5E5 0%);
+  }
+  .skill-1__title {
+    padding-top: 40px;
+  }
+    .skill-1__title h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+      margin-top: -30px;
+    }
+
+    .single { max-width: 800px; margin: 30px 0 50px 350px;}
+      .single img { width: 99%; border-radius: 10px; border: 1px solid black;}
+
+    .skill-1__textbox {
+      height: 160px;
+      width: 800px;
+      margin: 80px auto;
+      text-align: start;
+      padding-left: 50px;
+      font-size: 15px;
+      letter-spacing: 0.1em;
+      line-height: 2em;
+    }
+
+    .skill-1__textbox p {
+      margin: 20px 0;
+    }
+
+/* skill-2 */
+.skill-2 {
+  text-align: center;
+}
+
+  .skill-2 .title {
+    padding-top: 40px;
+  }
+
+    .skill-2 .title h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-top: -30px;
+      margin-left: 50px;
+    }
+
+  .single-2 { max-width: 800px; margin: 50px 300px 0 350px;}
+    .single-2 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
+
+  .single-2__textbox {
+    height: 160px;
+    width: 800px;
+    margin: 80px auto;
+    text-align: start;
+    padding-left: 50px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+  }
+
+    .single-2__textbox p , .textbox a{
+      margin: 20px 0;
+    }
+
+/* skill-3 */
+.skill-3 {
+  text-align: center;
+}
+
+  .skill-3 .title {
+    padding-top: 40px;
+  }
+
+    .skill-3 .title h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-top: -30px;
+      margin-left: 50px;
+    }
+
+  .single-3 { max-width: 800px; margin: 50px 300px 0 350px;}
+    .single-3 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
+
+  .skill-3__textbox {
+    height: 160px;
+    width: 800px;
+    margin: 80px auto;
+    text-align: start;
+    padding-left: 50px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+  }
+
+    .skill-3__textbox p {
+      margin: 20px 0;
+    }
+
+/* skill-4 */
 .skill-4 {
-  height: 650px;
-  margin-bottom: 200px;
-}
-.skill-4__title {
-  padding-top: 40px;
-}
-.skill-4__title h1{
-  font-size: 40px;
-}
-.skill-4__textbox {
-  height: 160px;
-  width: 740px;
-  margin: 80px auto;
-  text-align: start;
-  padding-left: 50px;
-  font-size: 15px;
-  letter-spacing: 0.1em;
-  line-height: 2em;
-  color: gray;
-}
-.about {
-  text-align: center;
-  padding-top: 100px;
-}
-.about h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.contact {
   text-align: center;
 }
 
-  .contact-form textarea {
-    width: 85%;
+  .skill-4 .title {
+    padding-top: 40px;
   }
 
+    .skill-4 .title h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-top: -30px;
+      margin-left: 50px;
+    }
+
+  .single-4 { max-width: 800px; margin: 50px 300px 0 350px;}
+    .single-4 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
+
+  .skill-4__textbox {
+    height: 160px;
+    width: 740px;
+    margin: 80px auto;
+    text-align: start;
+    padding-left: 50px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+  }
+
+    .skill-4__textbox p {
+      margin: 20px 0;
+    }
+
+/* WORKS */
 .works {
   text-align: center;
   height: 1500px;
@@ -223,6 +274,7 @@ header li {
   font-size: 20px;
   position: relative;
 }
+
 
   .works h1 {
     padding-top: 50px;
@@ -234,80 +286,121 @@ header li {
     background: linear-gradient(transparent 90%, #E5E5E5 0%);
   }
 
-    .work-1 h2, .work-2 h2 {
-      margin-bottom: 20px;
-    }
-  
-  .work-1__title, .work-2__title {
-    margin-top: 30px;
-  }
+/* work-1 */
+.work-1 {
+  margin-left: 15px; 
+}
 
-  .work-1__title h3{
-    z-index: 1;
-    margin-top: 20px;
-    position: absolute;
-    left: 670px;
-    top: 230px;
-    background-color: #fff;
-    padding: 10px;
-  }
+.work-1 h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
 
-    .works .textbox {
+.work-1__url {
+  margin-bottom: 20px;
+}
+
+.work-1__procedure {
+  position: relative;
+  margin-top: 50px;
+}
+
+    .work-1__title h3 {
+      z-index: 1;
       margin-top: 20px;
-      height: 600px;
-      padding: 15px 15px 30px 15px;
-      border: 1px solid gray;   
+      position: absolute;
+      left: 700px;
+      top: -45px;
+      background-color: #fff;
+      padding: 10px;
     }
-  
-  .work-2__procedure {
-    position: relative;
+
+.work-1__textbox {
+  margin: 20px 50px 100px 400px;
+  height: 725px;
+  padding: 15px 15px 30px 15px;
+  border: 1px solid gray;
+  width: 700px;
+}
+
+  .work-1__textbox p {
+    margin: 30px 0;
+    text-align: start;
   }
 
-  .work-2__title h3{
-    z-index: 1;
-    margin-top: 20px;
-    position: absolute;
-    left: 660px;
-    top: -45px;
-    background-color: #fff;
-    padding: 10px;
+  .work-1__textbox span {
+    margin-right: 20px;
   }
+
+/* work-2 */
+  .work-2 h2 {
+    margin: 0 0 20px 25px;
+    font-weight: bold;
+  }
+
+.work-2__procedure {
+  position: relative;
+}
+
+    .work-2__title h3{
+      z-index: 1;
+      margin-top: 20px;
+      position: absolute;
+      left: 680px;
+      top: -45px;
+      background-color: #fff;
+      padding: 10px;
+    }
 
   #work-2__textbox {
-    height: 210px;
-    margin-top: 80px;
+    height: 240px;
+    margin: 70px 0 0 450px;
+    border: 1px solid gray;
+    width: 570px;
+    padding-left: 20px;
   }
 
-  .contact {
-    width: 100%;
+    #work-2__textbox p {
+      margin: 30px 0;
+      text-align: start;
+    }
+
+    #work-2__textbox span {
+      margin-right: 20px;
+    }
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+  .contact h1 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 23%;
+    font-size: 50px;
+    margin-bottom: 60px;
+    margin-left: 580px;
+    background: linear-gradient(transparent 90%, #E5E5E5 0%);
+  }
+
+  .form {
+    background-color: #E5E5E5;
+    width: 60%;
+    margin: 0 500px 500px 300px;
+    padding: 25px;
     border-radius: 10px;
   }
-    .contact h1 {
-      padding-top: 50px;
-      padding-bottom: 20px;
-      width: 23%;
-      font-size: 50px;
-      margin-bottom: 60px;
-      margin-left: 580px;
-      background: linear-gradient(transparent 90%, #E5E5E5 0%);
-    }
-
-    .form {
-      background-color: #E5E5E5;
-      width: 60%;
-      margin: 0 500px 500px 300px;
-      padding: 25px;
-      border-radius: 10px;
-    }
-
-      .form .lavel {
-        font-size: 30px;
-      }
 
     .contact-form {
       margin: 10px 0;
     }
-    
+      .form .lavel {
+        font-size: 30px;
+      }
+
       .contact-form input {
         margin: 15px 0;
         height: 30px;
@@ -334,6 +427,7 @@ header li {
       border-radius: 10px;
     }
 
+/* スクロール */
   .scroll-arrow {
     height: 50px;
     width: 50px;
@@ -349,6 +443,5 @@ header li {
     cursor: pointer;
   }
 
-  
 
-  
+
