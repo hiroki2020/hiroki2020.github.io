@@ -149,6 +149,10 @@ a {
     .single { max-width: 800px; margin: 30px 0 50px 350px;}
       .single img { width: 99%; border-radius: 10px; border: 1px solid black;}
 
+    .smart-phone img {
+      display: none;
+    }
+
     .skill-1__textbox {
       height: 160px;
       width: 800px;

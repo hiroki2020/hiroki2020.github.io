@@ -168,7 +168,8 @@
       .single { width: 700px; margin: 30px 0 50px 200px; display: none;}
         .single img { width: 99%; border-radius: 10px; border: 1px solid black;}
 
-      .skill-1 img {
+      .smart-phone img {
+        display: block;
         width: 1000px;
         height: 500px;
         margin: 10px 80px 0 50px;
