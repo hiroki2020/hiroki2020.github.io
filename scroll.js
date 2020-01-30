@@ -76,12 +76,12 @@ $(function(){
   });
 
   $('#modal-work-1').on("click", function(){
-    $('html').animate({scrollTop: 9700})
+    $('html').animate({scrollTop: 9400})
   });
 
 
   $('#modal-work-2').on("click", function(){
-    $('html').animate({scrollTop: 10800})
+    $('html').animate({scrollTop: 10400})
   });
 
   $('#modal-contact').on("click", function(){
