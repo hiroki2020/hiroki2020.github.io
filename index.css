@@ -224,6 +224,10 @@ a {
 
   .single-3 { max-width: 800px; margin: 50px 300px 0 350px;}
     .single-3 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
+  
+  .smart-phone img {
+    display: none;
+  } 
 
   .skill-3__textbox {
     height: 160px;
@@ -258,6 +262,10 @@ a {
 
   .single-4 { max-width: 800px; margin: 50px 300px 0 350px;}
     .single-4 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
+
+  .smart-phone img {
+    display: none;
+  } 
 
   .skill-4__textbox {
     height: 160px;
