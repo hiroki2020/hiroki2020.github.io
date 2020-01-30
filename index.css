@@ -71,7 +71,7 @@ a {
 
 .top-textbox {
   background-color: #E5E5E5;
-  height: 550px;
+  height: 580px;
   width: 1200px;
   text-align: start;
   display: flex;
@@ -225,7 +225,7 @@ a {
   .single-3 { max-width: 800px; margin: 50px 300px 0 350px;}
     .single-3 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
   
-  .smart-phone img {
+  .skill-3__smart-phone img {
     display: none;
   } 
 
