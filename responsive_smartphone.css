@@ -425,20 +425,20 @@ position: relative;
     width: 83%;
     font-size: 50px;
     margin-bottom: 60px;
-    margin-left: 380px;
+    margin-left: 400px;
     background: linear-gradient(transparent 90%, #E5E5E5 0%);
   }
 
   .form {
     background-color: #E5E5E5;
     width: 200%;
-    margin: 0 500px 500px 130px;
+    margin: 0 500px 500px 180px;
     padding: 30px;
     border-radius: 10px;
   }
 
     .contact-form {
-      margin: 10px 0;
+      margin: 10px 0 0 0;
     }
       .form .lavel {
         font-size: 30px;

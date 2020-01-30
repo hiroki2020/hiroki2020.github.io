@@ -72,20 +72,20 @@ $(function(){
   });
 
   $('#modal-works').on("click", function(){
-    $('html').animate({scrollTop: 5570})
+    $('html').animate({scrollTop: 10050})
   });
 
   $('#modal-work-1').on("click", function(){
-    $('html').animate({scrollTop: 5690})
+    $('html').animate({scrollTop: 10250})
   });
 
 
   $('#modal-work-2').on("click", function(){
-    $('html').animate({scrollTop: 6800})
+    $('html').animate({scrollTop: 11300})
   });
 
   $('#modal-contact').on("click", function(){
-    $('html').animate({scrollTop: 7750})
+    $('html').animate({scrollTop: 12150})
   });
 
 });
