@@ -60,32 +60,32 @@ $(function(){
   });
 
   $('#modal-skill-2').on("click", function(){
-    $('html').animate({scrollTop: 2600})
+    $('html').animate({scrollTop: 2750})
   });
 
   $('#modal-skill-3').on("click", function(){
-    $('html').animate({scrollTop: 3680})
+    $('html').animate({scrollTop: 5380})
   });
 
   $('#modal-skill-4').on("click", function(){
-    $('html').animate({scrollTop: 4530})
+    $('html').animate({scrollTop: 6330})
   });
 
   $('#modal-works').on("click", function(){
-    $('html').animate({scrollTop: 10050})
+    $('html').animate({scrollTop: 9500})
   });
 
   $('#modal-work-1').on("click", function(){
-    $('html').animate({scrollTop: 10250})
+    $('html').animate({scrollTop: 9700})
   });
 
 
   $('#modal-work-2').on("click", function(){
-    $('html').animate({scrollTop: 11300})
+    $('html').animate({scrollTop: 10800})
   });
 
   $('#modal-contact').on("click", function(){
-    $('html').animate({scrollTop: 12150})
+    $('html').animate({scrollTop: 11550})
   });
 
 });
