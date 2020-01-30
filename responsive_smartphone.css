@@ -5,7 +5,7 @@
   } 
 } */
 
-@media screen and (max-width: 767px) { 
+@media (max-width: 767px) { 
 
   .scroll-arrow{
     font-size: 40px;
@@ -165,8 +165,14 @@
         width: 300px;
       }
   
-      .single { width: 700px; margin: 30px 0 50px 200px;}
+      .single { width: 700px; margin: 30px 0 50px 200px; display: none;}
         .single img { width: 99%; border-radius: 10px; border: 1px solid black;}
+
+      .skill-1 img {
+        width: 1000px;
+        height: 500px;
+        margin: 10px 80px 0 50px;
+      }
   
       .skill-1__textbox {
         height: 160px;
@@ -200,7 +206,7 @@
         width: 300px;
       }
   
-    .single-2 { width: 1000px; margin: 50px 300px 0 150px;}
+    .single-2 { width: 1000px; margin: 50px 300px 0 150px;display: none;}
       .single-2 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
   
     .single-2__textbox {
@@ -234,7 +240,7 @@
       margin-left: 500px;
     }
 
-  .single-3 { width: 1000px; margin: 50px 300px 0 170px;}
+  .single-3 { width: 1000px; margin: 50px 300px 0 170px;display: none;}
     .single-3 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
 
   .skill-3__textbox {
@@ -267,7 +273,7 @@
       width: 300px;
     }
 
-  .single-4 { width: 800px; margin: 50px 300px 0 150px;}
+  .single-4 { width: 800px; margin: 50px 300px 0 150px;display: none;}
     .single-4 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
 
   .skill-4__textbox {
