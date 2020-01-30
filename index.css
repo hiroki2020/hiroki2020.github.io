@@ -187,6 +187,10 @@ a {
   .single-2 { max-width: 800px; margin: 50px 300px 0 350px;}
     .single-2 img{ width: 99%; border-radius: 10px; border: 1px solid black;}
 
+  .smart-phone img {
+    display: none;
+  }
+
   .single-2__textbox {
     height: 160px;
     width: 800px;
