@@ -123,7 +123,7 @@ a {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* skill-1 */
+/* skill-1 HTML & CSS */
 .skill-1 {
   text-align: center;
 }
@@ -148,6 +148,8 @@ a {
 
     .single { max-width: 800px; margin: 30px 0 50px 350px;}
       .single img { width: 99%; border-radius: 10px; border: 1px solid black;}
+    
+      
 
     .smart-phone img {
       display: none;
