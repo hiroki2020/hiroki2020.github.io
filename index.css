@@ -71,7 +71,7 @@ a {
 
 .top-textbox {
   background-color: #E5E5E5;
-  height: 580px;
+  height: 730px;
   width: 1200px;
   text-align: start;
   display: flex;
@@ -80,8 +80,13 @@ a {
 }
 
   .top-textbox__contents {
-    padding: 20px;
+    padding: 20px 0 0 20px;
   }
+
+   .top-textbox__contents a {
+     color: blue;
+     text-decoration: underline;
+   }
 
   .top-textbox__contents p{
     line-height: 50px;
@@ -128,7 +133,7 @@ a {
   text-align: center;
 }
   .skill-1 h2 {
-    padding-top: 50px;
+    padding-top: 120px;
     padding-bottom: 20px;
     width: 13%;
     font-size: 50px;

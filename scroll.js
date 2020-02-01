@@ -11,40 +11,40 @@ $(function(){
   });
 
   $('#skill').on("click", function(){
-    $('html').animate({scrollTop: 810})
+    $('html').animate({scrollTop: 880})
   });
 
   $('#skill-1').on("click", function(){
-    $('html').animate({scrollTop: 910})
+    $('html').animate({scrollTop: 970})
   });
 
   $('#skill-2').on("click", function(){
-    $('html').animate({scrollTop: 1630})
+    $('html').animate({scrollTop: 1860})
   });
 
   $('#skill-3').on("click", function(){
-    $('html').animate({scrollTop: 2500})
+    $('html').animate({scrollTop: 2720})
   });
 
   $('#skill-4').on("click", function(){
-    $('html').animate({scrollTop: 3210})
+    $('html').animate({scrollTop: 3440})
   });
 
   $('#works').on("click", function(){
-    $('html').animate({scrollTop: 4120})
+    $('html').animate({scrollTop: 4360})
   });
 
   $('#work-1').on("click", function(){
-    $('html').animate({scrollTop: 4250})
+    $('html').animate({scrollTop: 4490})
   });
 
 
   $('#work-2').on("click", function(){
-    $('html').animate({scrollTop: 5100})
+    $('html').animate({scrollTop: 5420})
   });
 
   $('#contact').on("click", function(){
-    $('html').animate({scrollTop: 5630})
+    $('html').animate({scrollTop: 5840})
   });
 
   // スマホでメニューのリストをクリックした時の位置調整
