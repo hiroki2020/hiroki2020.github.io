@@ -110,7 +110,7 @@
       overflow: scroll;
       border: 2px solid black;
       margin-left: 150px;
-      display: block;
+      display: none;
     }
   
   .skill-1, .skill-2, .skill-3, .skill-4 {

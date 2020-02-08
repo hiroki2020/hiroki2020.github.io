@@ -7,7 +7,7 @@ $(function(){
 
   // PCでメニューのリストをクリックした時の位置調整
   $('#about').on("click", function(){
-    $('html').animate({scrollTop: 30})
+    $('html').animate({scrollTop: 0})
   });
 
   $('#skill').on("click", function(){
