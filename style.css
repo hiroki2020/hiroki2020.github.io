@@ -2,13 +2,13 @@
 
 header {
   height: 8vh;
-  line-height: 69px;
   border-bottom: 1px solid rgba(229,229,229,0.9);
 }
 
   #contact {
     float: left;
     margin-left: 20px;
+    line-height: 65px;
   }
 
   header ul {
