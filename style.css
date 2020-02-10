@@ -83,6 +83,7 @@ header {
     .main__contents h1 {
       text-align: center;
       margin: 20px 0;
+      font-size: 20px;
     }
 
     .main__contents p {
