@@ -256,7 +256,10 @@ header {
     .video-sp {
       position: absolute;
       top: 50px;
-      left: 200px;
+      left: 190px;
+    }
+    .video-sp-responsive {
+      display: none;
     }
 
 /* フッター */
