@@ -1,237 +1,164 @@
 <!DOCTYPE html>
 <head>
+  <meta charcet="UTF-8">
   <title>Shibata Hiroki</title>
-  <link href="index.css" rel="stylesheet">
-  <link href="modal.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="slick/slick.css" rel="stylesheet">
-  <link href="slick/slick-theme.css" rel="stylesheet">
-  <link href="reset.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="slick/slick.min.js"></script>
-  <script src="slick/slick.js"></script>
-  <script src="accordion.js"></script>
-  <script src="bold.js"></script>
-  <script src="scroll.js"></script>
-  <script src="table-of-contents.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sp-style.css">
   <script src="https://kit.fontawesome.com/2bd93a793c.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-  <meta name="viewport" content="width=device-width", initial-scale=1.0>
-  <link href="responsive_smartphone.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="hover-click.js"></script>
+  <script src="modal.js"></script>
 </head>
 <body>
-  
   <header>
-    <ul class="table-of-contents-pc">
-      <h1 id="about">ABOUT</h1>
-      <h1 id="skill">SKILL</h1>
-      <ul>
-        <li id="skill-1">・HTML & CSS</li>
-        <li id="skill-2">・Haml & Sass</li>
-        <li id="skill-3">・jQuery</li>
-        <li id="skill-4">・Ruby on Rails</li>
-      </ul>
-      <h1 id="works">WORKS</h1>
-      <li id="work-1">・Freemarket App</li>
-      <li id="work-2">・Expense App</li>
-      <h1 id="contact">CONTACT</h1>
+    <li id="contact">お問い合わせ</li>
+    <ul>
+      <li id="about">自己紹介</li>
+      <!-- <li id="be-able-to">できること</li> -->
+      <li id="works">制作物</li>
     </ul>
-    
-    <a href="#" class="menu-icon">
-      <span class="fa fa-bars"></span> 
-    </a>
-
-    <div class="modal">
-      <ul class="table-of-contents">
-        <h1 id="modal-about">ABOUT</h1>
-        <h1 id="modal-skill">SKILL</h1>
-        <ul>
-          <li id="modal-skill-1">・HTML & CSS</li>
-          <li id="modal-skill-2">・Haml & Sass</li>
-          <li id="modal-skill-3">・jQuery</li>
-          <li id="modal-skill-4">・Ruby on Rails</li>
-        </ul>
-        <h1 id="modal-works">WORKS</h1>
-        <li id="modal-work-1">・Freemarket App</li>
-        <li id="modal-work-2">・Expense App</li>
-        <h1 id="modal-contact">CONTACT</h1>
-      </ul>
-    </div>
   </header>
-
-  <div class="top">
-    <div class="introduce">
-      <h1>自己紹介</h1>
-      <div class="me">
-        <img src="img/IMG_3760のコピー2.jpg">
-      </div>   
+  <div class="header-icon">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="modal">
+    <div class="modal-title"></div>
+    <div class="modal-menus">
+      <div class="modal-menu"><P id="modal-contact">お問い合わせ</P></div>
+      <div class="modal-menu"><P id="modal-about">自己紹介</P></div>
+      <div class="modal-menu"><P id="modal-works">制作物</P></div>
     </div>
-      <div class="top-textbox">
-        <div class="top-textbox__contents">
-          <p>新卒で就職したホテルを退職後、オンラインプログラミングサイトProgateを通してプログラミングに出会いました。自分が書いたコードによって画面が変化していくことが楽しく、学習を継続していました。</p>
-          <p>JavaやPythonなどのプログラミング言語に少し触れた後、通信系のエンジニアに転職しましたが、"未経験だったためプログラミング言語を使用した業務にアサインされなかった"、"web系のエンジニアになりたかった"という2つの理由があり、退職を決意しました。</p>
-          <p>その後、プログラミングスクールTECH::EXPERTのフリーランスコースを受講しました。</p>
-          <p>現在(2020年1月23日時点)は、スクールを卒業しています。</p>
-          <p>HTML CSS jQueryを用いたwebサイトのコーディング、Ruby on Railsを使用したwebアプリケーション開発が得意です。</p>
-          <p>Twitterでは、毎日行うこと・学習効率を高めるためにできること・思ったことを発信しています。</p>
-          <p>はてなブログ&nbsp;(<a href="https://khirok.hatenadiary.jp/" target="_blank">https://khirok.hatenadiary.jp/</a>)&nbsp;では、学習記録を書いています。</p>
-          <p>また最近は、仕事の幅を広げるため、WordPressを学習中です。</p>
-          <p>学習の一環として、2020年1月までの 「はてなブログの記事」 をWordPressに移行しました。(<a href="http://smart-beppu-7649.chu.jp/" target="_blank">http://smart-beppu-7649.chu.jp/</a>)</p>
+  </div>
+  <main>
+    <!-- 一番最初のページ -->
+    <div class="top">
+      <div class="top__text-box">
+        <h1>My Portfolio</h1>
+        <div class="top__text">
+          <p>はじめまして、柴田浩貴です。</p>
+          <p>ヘッダーメニュー(スマホの場合は、ヘッダーアイコン)をクリックすると、画面が切り替わります。</p>
         </div>
       </div>
-      <div class="twitter--smart-phone">
-        <a class="twitter-timeline" href="https://twitter.com/khiro14726723?ref_src=twsrc%5Etfw">Tweets by khiro14726723</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>                   
-  </div>
-
-  <div class="skill-1">
-    <h2>スキル</h2>
-    <div class="skill-1__title">
-      <h1>HTML & CSS</h1>
-    </div>
-    <div class="single">
-      <a href="https://gyazo.com/43827f22127854cf38a02c685b4b4e6c"><img src="https://i.gyazo.com/43827f22127854cf38a02c685b4b4e6c.gif" alt="Image from Gyazo" width="1000"/></a>
-    </div>
-    <div class="smart-phone"><img src="img/workship.png"></div>
-    <div class="skill-1__textbox">
-      <p>HTMLとCSSを使用して、このような見た目を作ることができます。こちらは、(<a href="https://goworkship.com/" target="_blank">フリーランスプラットフォームWorkship</a>)をローカル環境にて、模写コーディングしたものです。</p>
-    </div>
-  </div>
-
-  <div class="skill-2">
-    <div class="title">
-      <h1>Haml & Sass</h1>
-    </div>
-    <div class="single-2">
-      <div><img src="img/出品ページ1.png"></div>
-      <div><img src="img/出品ページ2.png"></div>
-      <div><img src="img/出品ページ3.png"></div>
-      <div><img src="img/出品ページ4.png"></div>
-    </div>
-    <div class="skill-2__smart-phone"><img src="img/出品ページ1.png"></div>
-    <div class="skill-2__smart-phone"><img src="img/出品ページ2.png"></div>
-    <div class="skill-2__smart-phone"><img src="img/出品ページ3.png"></div>
-    <div class="skill-2__smart-phone"><img src="img/出品ページ4.png"></div>
-    <div class="single-2__textbox">
-      <p>htmlとcssを使用したコーディング以外にも、Ruby on Railsの環境内のみですが、</p>
-      <p>htmlとcssをより簡単に記述できるHamlとSassを使用して、このような見た目を作ることができます。</p>
-      <p>これは、TEXH::EXPERTで3人体制のアジャイル開発で自分が担当した箇所です。</p>
-    </div>
-  </div>
-
-  <div class="skill-3">
-    <div class="title">
-      <h1>jQuery</h1>
-    </div>
-    <div class="single-3">
-      <div><img src="img/number-before.png"></div>
-      <div><img src="img/number-after.png"></div>
-    </div>
-    <div class="skill-3__smart-phone"><img src="img/number-before.png"></div>
-    <div class="skill-3__smart-phone"><img src="img/number-after.png"></div>
-    <div class="skill-3__textbox">
-      <p>"フォームに価格を入力すると、販売手数料と販売利益が自動計算されて表示される"</p>
-      <p>という仕組みをjQueryを用いて実装することができます。</p>
-      <p></p>
-      <p></p>
-    </div>
-  </div>
-
-  <div class="skill-4">
-    <div class="title">
-      <h1>Ruby on Rails</h1>
-    </div>
-    <div class="single-4">
-      <div><img src="img/exhibit-1.png"></div>
-      <div><img src="img/exhibit-2.png"></div>
-      <div><img src="img/exhibit-3.png"></div>
-      <div><img src="img/exhibit-4.png"></div>
-      <div><img src="img/exhibit-5.png"></div>
-    </div>
-    <div class="smart-phone"><img src="img/exhibit-1.png"></div>
-    <div class="smart-phone"><img src="img/exhibit-2.png"></div>
-    <div class="smart-phone"><img src="img/exhibit-3.png"></div>
-    <div class="smart-phone"><img src="img/exhibit-4.png"></div>
-    <div class="smart-phone"><img src="img/exhibit-5.png"></div>
-    <div class="skill-4__textbox">
-      <p>Ruby on Railsを使用して、「"商品出品" → "一覧ページに表示"」の流れを実装することができます。</p>
-      <p>スライドでは、1,400円のコップを出品しています。</p>
-      <p>4枚目のモーダルはjQueryを使用しました。</p>
-    </div>
-  </div>
-
-  <div class="works">
-    <h1>作品(Ruby on Rails)</h1>
-    <div class="work-1">
-      <h2>フリマアプリ</h2>
-      <div class="work-1__url">
-        URL・・・<a href="http://18.177.162.64/" target="_blank">http://18.177.162.64</a>
+      <div class="top__image">
+        <img src="IMG_3760のコピー.jpg" height="500" width="400">
       </div>
     </div>
-    <div class="work-1__procedure">
-      <div class="work-1__title">
-        <h3>操作手順</h3>
-      </div>
-      <div class="work-1__textbox">
-        <p><span>①</span>ユーザー名とパスワードを入力してください。</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>ID・・・</span>64teama</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>PassWord・・・</span>64teama</p>
-        <p><span>②</span>ログインしてください。</p> 
-        <p>&nbsp;&nbsp;&nbsp;●購入動作を確認したい場合</p> 
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>メールアドレス・・・</span>buyer@gmail.com</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>パスワード・・・</span>1234567</p>
-        <p>&nbsp;&nbsp;&nbsp;●出品動作を確認したい場合</p> 
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>メールアドレス・・・</span>seller@gmail.com</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>パスワード・・・</span>1234567</p>
-        <p><span>③</span>出品や購入をお試しください。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;(動作確認用のアカウントなので、実際に費用が発生したり商品が届く<br><br>&nbsp;&nbsp;&nbsp;&nbsp;ことはありません。)</p>
-        <p><span>④</span>「マイページ → 設定」からログアウトしてください。</p>
-      </div>
-    </div>
-
-    <div class="work-2">
-      <h2>支出管理アプリ</h2>
-      <div class="work-2__url">
-        URL・・・<a href="https://expense-hiroki.herokuapp.com/" target="_blank">https://expense-hiroki.herokuapp.com/</a>
-      </div>
-    </div>
-    <div class="work-2__procedure">
-      <div class="work-2__title">
-        <h3>操作手順</h3>
-      </div>
-      <div class="textbox" id="work-2__textbox">
-        <p><span>①</span>新規登録をしてください</p>
-        <p><span>②</span>「支出を記録する」をクリックしてください。</p> 
-        <p><span>③</span>「何に」、「いくら」使ったのかを入力してください。</p>
-        <p><span>④</span>その他にもアプリ内で色々とお試しください。</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact">
-    <h1>お問い合わせ</h1>
-    <div class="form">
-      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIoFlejlwzZVT1do4nP5_Z0c51QfCFAiF7XYDeLirVtfevAA/formResponse" method="post">
-        <div class="contact-form">
-          <div class="lavel">お名前</div>
-          <input type="text" name="entry.2005620554">
+    <!-- お問い合わせ -->
+    <div class="main contact">
+      <div class="main__contents contact-form">
+        <div class="contact">
+          <div class="form">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIoFlejlwzZVT1do4nP5_Z0c51QfCFAiF7XYDeLirVtfevAA/formResponse" method="post">
+              <div class="contact-form">
+                <div class="lavel">お名前</div>
+                <input type="text" name="entry.2005620554">
+              </div>
+              <div class="contact-form">
+                <div class="lavel">メールアドレス</div>
+                <input type="email" name="entry.1045781291">
+              </div>
+              <div class="contact-form">
+                <div class="lavel">お問い合わせ内容</div>
+                <textarea name="entry.839337160" rows="5" cols="30"></textarea> 
+              </div>
+              <button type="submit" name="submit" class="btn btn-info">送信する</button>
+            </form>
+          </div>
         </div>
-        <div class="contact-form">
-          <div class="lavel">メールアドレス</div>
-          <input type="email" name="entry.1045781291">
-        </div>
-        <div class="contact-form">
-          <div class="lavel">お問い合わせ内容</div>
-          <textarea name="entry.839337160" rows="5" cols="30"></textarea> 
-        </div>
-        <button type="submit" name="submit" class="btn btn-info">送信する</button>
-      </form>
+      </div>
     </div>
-  </div>
-  
-  <div class="scroll-arrow">
-    <i class="fa fa-arrow-up" aria-hidden="true"></i>
-  </div>
+    <!-- 自己紹介 -->
+    <div class="main about">
+      <div class="main__contents history">
+        <h1 class="border">経歴</h1>
+        <p>新卒で就職したホテルを退職後、オンラインプログラミングサイトProgateを通してプログラミングに出会いました。自分が書いたコードによって画面が変化していくことが楽しく、学習を継続していました。
 
+          JavaやPythonなどのプログラミング言語に少し触れた後、通信系のエンジニアに転職しましたが、"未経験だったためプログラミング言語を使用した業務にアサインされなかった"、"web系のエンジニアになりたかった"という2つの理由があり、退職を決意しました。<br>
+          
+          その後、プログラミングスクールTECH::EXPERTのフリーランスコースを受講しました。1日約10時間の学習量のアウトプット重視のカリキュラムを10週間継続しました。
+          
+          現在(2020年2月8日)は、スクールを卒業しています。</p>
+      </div>
+      <div class="main__contents output">
+        <h1>発信</h1>
+        <div class="output__contents">
+          <div class="twitter">
+            <p>Twitter</p>
+            <a class="twitter-timeline" href="https://twitter.com/khiro14726723?ref_src=twsrc%5Etfw">Tweets by khiro14726723</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="hatena">
+            <p>はてなブログ</p>
+            <a href="https://khirok.hatenadiary.jp/">
+              <img src="hatena.png">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- できること -->
+    <!-- <div class="main be-able-to">
+      <div class="main__contents lp">
+        <h1>LP制作</h1>
+      </div>
+      <div class="main__contents sp">
+        <h1>レスポンシブ化</h1>
+      </div>
+      <div class="main__contents coding">
+        <h1>HTML / CSS コーディング</h1>
+      </div>
+    </div> -->
+
+    <!-- 制作物 -->
+    <div class="main works">
+      <div class="main__contents works-lp">
+        <h1>LPの模写コーディング(HTML / CSS を使用)</h1>
+        <p>Workshipさん(<a href="https://goworkship.com/">https://goworkship.com/</a>)の模写コーディングをしています。</p>
+        <div class="works-lp__img">
+          <img src="workship.png" height="65%" width="100%">
+          <button>動画を見る</button>
+        </div>
+      </div>
+      <div class="main__contents works-sp">
+        <h1>LPの模写コーディングをiphoneの画面幅に最適化</h1>
+        <img src="sp-workship.png" width="40%">
+        <button>動画を見る</button>
+      </div>
+      <!-- <div class="main__contents coding">
+        <h1>フリマサイトの出品ページ</h1>
+      </div> -->
+    </div>
+
+    <!-- モーダル -->
+    <div class="modal-wrapper-lp">
+      <div class="modal-contents">
+        <div class="modal-icon"><i class="fas fa-times"></i></div>
+        <div class="video">
+          <a href="https://gyazo.com/0d224b6a82ac5e4e6f8616a3181f3ac7"><video alt="Video from Gyazo" width="1100" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/0d224b6a82ac5e4e6f8616a3181f3ac7.mp4" type="video/mp4" /></video></a>
+        </div>
+        <div class="video-responsive">
+          <a href="https://gyazo.com/0d224b6a82ac5e4e6f8616a3181f3ac7"><video alt="Video from Gyazo" width="365" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/0d224b6a82ac5e4e6f8616a3181f3ac7.mp4" type="video/mp4" /></video></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-wrapper-sp">
+      <div class="modal-contents-sp">
+        <div class="modal-icon"><i class="fas fa-times"></i></div>
+        <div class="video-sp">
+          <a href="https://gyazo.com/384ab822ee59837797d805de58ad307c"><img src="https://i.gyazo.com/384ab822ee59837797d805de58ad307c.gif" alt="Image from Gyazo" width="400"/></a>
+        </div>
+        <div class="video-sp-responsive">
+          <a href="https://gyazo.com/384ab822ee59837797d805de58ad307c"><img src="https://i.gyazo.com/384ab822ee59837797d805de58ad307c.gif" alt="Image from Gyazo" width="300"/></a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </main>
+  <footer>
+    <p>最終更新日：2020年2月10日</p>
+  </footer>
 </body>
-
