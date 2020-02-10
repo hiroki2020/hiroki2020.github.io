@@ -5,7 +5,7 @@
   } 
 } */
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 670px) { 
 
   .scroll-arrow{
     font-size: 40px;
@@ -85,7 +85,7 @@
     }
     .top-textbox {
       background-color: #E5E5E5;
-      height: 1050px;
+      height: 1350px;
       width: 800px;
       text-align: start;
       margin: 0 100px 100px 150px;
@@ -169,9 +169,9 @@
         .single img { width: 99%; border-radius: 10px; border: 1px solid black;}
 
       .smart-phone img {
-        display: none;
-        width: 1000px;
-        height: 500px;
+        display: block;
+        width: 2000px;
+        height: 1000px;
         margin: 10px 80px 0 50px;
       }
   
@@ -212,8 +212,8 @@
 
     .smart-phone img {
       display: block;
-      width: 1000px;
-      height: 500px;
+      width: 1500px;
+      height: 1000px;
       margin: 10px 80px 0 50px;
     }
   
