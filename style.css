@@ -8,11 +8,11 @@ header {
   #contact {
     float: left;
     margin-left: 20px;
-    line-height: 65px;
   }
 
   header ul {
     float: right;
+
   }
     
     header li {
@@ -20,6 +20,7 @@ header {
       margin-right: 20px;
       float: left;
       cursor: pointer;
+      line-height: 60px;
     }
 
 .header-icon {
